@@ -1,3 +1,4 @@
+
 /*
 Leggere da tastiera un vettore di interi V e il suo riempimento r, allocandolo dinamicamente
 senza l’uso di funzioni.
@@ -30,10 +31,10 @@ int main(){
     cout<<"Inserire elementi del vettore:"<<endl;
     for (int i = 0; i < n; i++)
         cin>>vet[i];
-    
+
     for (int i = 0; i < n; i++)
         cout<<endl<<"Vettore["<<i<<"]= "<<vet[i];
-    
+
     vet_2= allocazione_vettore(&n_2);
     riempi_v(n_2, vet_2);
     stampa_v(n_2, vet_2);
