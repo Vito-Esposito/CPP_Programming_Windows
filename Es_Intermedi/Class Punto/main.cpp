@@ -1,22 +1,23 @@
 #include <iomanip>
 #include <iostream>
-#include "punto.hpp"
+#include "punto3D.hpp"
 
 using namespace std;
 
-int main(){
-    Punto punti[9];
+int main() {
+    Punto3D punti3[9];
     int pos=0;
+    int seed;
+
+    cout << "Seed: ";
+    srand(seed);
 
     for(int i=0;i<3;i++)
-        for(int j=0;j<3;j++){
-            punti[pos].setX(i).setY(j);
-            pos++;
-    }
+        for(int j=0;j<3;j++)
+            punti3[pos++].setX(i).setY(j).setZ(rand()%3);
 
     for(int i=0;i<9;i++){
-        punti[i].show();
-        cout<<":"<<punti[i].distanza_origine()<<endl;
+        punti3[i].show();
+        cout<<":"<<punti3[i].distanza_origine()<<endl;
     }
-
 }

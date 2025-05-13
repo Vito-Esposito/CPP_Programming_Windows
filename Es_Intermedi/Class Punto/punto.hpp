@@ -14,7 +14,7 @@ class Punto{
     Punto &setX(double);
     Punto &setY(double);
     double distanza_origine() const;
-    void show();
+    void show() const;
 };
 
 #endif

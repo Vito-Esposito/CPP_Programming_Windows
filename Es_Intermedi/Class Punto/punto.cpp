@@ -36,6 +36,6 @@ double Punto::distanza_origine() const{
     return sqrt((x*x)+(y*y));
 }
 
-void Punto::show(){
+void Punto::show() const{
     cout<<"["<<x<<"]"<<";"<<"["<<y<<"]";
 }
